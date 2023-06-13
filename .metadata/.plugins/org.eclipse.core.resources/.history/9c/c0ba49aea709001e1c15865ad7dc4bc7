@@ -1,0 +1,21 @@
+package cgg.functionalinterface;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		//anonymous class
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Iam a Thread my task is executing..");
+				
+			}
+			
+		};
+		Thread thread = new Thread(r);
+		thread.start();
+	}
+
+}

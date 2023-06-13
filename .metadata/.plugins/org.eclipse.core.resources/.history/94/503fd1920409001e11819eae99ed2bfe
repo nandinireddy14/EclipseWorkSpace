@@ -1,0 +1,14 @@
+package cgg.defaultandstaticmethods;
+
+public class MyInterface {
+
+	public static void main(String[] args) {
+		
+		default public List<Student> sortStudents(List<Student> stuList)
+		{
+			Collections.sort(stuList);	
+		}
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package cgg.hibernate.xmlmapping.empdept;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class EmpDeptXMLMapping {
+
+	public static void main(String[] args) {
+		
+		Department d1 = new Department(1,"cse");
+		
+		Employee e1 = new Employee();
+		
+		
+		
+		SessionFactory factory = new Configuration().configure().buildSessionFactory();
+		Session s = factory.openSession();
+		
+		s.close();
+		factory.close();
+
+	}
+
+}

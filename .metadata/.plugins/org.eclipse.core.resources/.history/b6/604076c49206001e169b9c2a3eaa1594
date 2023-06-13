@@ -1,0 +1,25 @@
+package cgg.localtime;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+public class LocalTimeDemo {
+
+	public static void main(String[] args) {
+		LocalDate tt= LocalTime.now();
+		System.out.println(tt);
+		
+		System.out.println("2 Days added to today :"+tt.plusDays(2));
+		
+		System.out.println("3 months minus to today :"+tt.minusMonths(3));
+		
+		System.out.println("2 weeks added to today :"+tt.plusWeeks(2));
+		
+		
+		System.out.println("Move to 30th day of month :"+tt.withDayOfMonth(30));
+		
+		System.out.println("Day of Year :"+tt.withDayOfYear(20));
+
+	}
+
+}

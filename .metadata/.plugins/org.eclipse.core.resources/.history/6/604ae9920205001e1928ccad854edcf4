@@ -1,0 +1,63 @@
+package cgg.hibernate.cascade;
+
+import java.util.ArrayList;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import cgginterns.hibernate.map1.Brand;
+import cgginterns.hibernate.map1.Product;
+
+public class CascadeExample {
+
+	public static void main(String[] args) {
+		SessionFactory factory = new Configuration().configure().buildSessionFactory();
+		Session s = factory.openSession();
+		
+		Brand b1 = new Brand();
+		b1.setBrandId(5);
+		b1.setBrandName("Apple");
+		
+		
+		
+		
+		Product p1 = new Product(24,"iphone");
+		Product p2 = new Product(25,"iPad");
+		Product p3 = new Product(26,"mac book");
+		
+		ArrayList<Product> list = new ArrayList<Product>();
+		list.add(p1);
+		list.add(p2);
+		list.add(p3);
+		
+		b1.setProducts(list);
+		
+		
+		Brand b2 = new Brand(6,"Samsung");
+		
+		Product p21 = new Product(44,"Samsung Phone");
+		Product p22 = new Product(45,"Samsung TV");
+		Product p23 = new Product(46,"Samsung AC");
+		
+		ArrayList<Product> list1 = new ArrayList<Product>();
+		list1.add(p21);
+		list1.add(p22);
+		list1.add(p23);
+		
+		b2.setProducts(list1);
+		
+		Transaction tx = s.beginTransaction();
+		
+		s.save(b1);
+		s.save(b2);
+		
+		tx.commit();
+		
+		s.close();
+		factory.close();
+
+	}
+
+}

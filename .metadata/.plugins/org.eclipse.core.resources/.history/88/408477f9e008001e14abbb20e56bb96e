@@ -1,0 +1,44 @@
+package cgg.periodduration;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
+
+public class PeriodExample {
+
+	public static void main(String[] args) {
+		LocalDate start = LocalDate.of(2014, Month.JUNE, 2);
+		LocalDate end = LocalDate.now();
+		
+		Period period = start.until(end);
+		
+		System.out.println("Days : "+period.get(ChronoUnit.DAYS));
+		System.out.println("Months : "+period.get(ChronoUnit.MONTHS));
+		System.out.println("Years : "+period.get(ChronoUnit.YEARS));
+		
+		System.out.println("Days : "+period.getDays());
+		System.out.println("Months : "+period.getMonths());
+		System.out.println("Years : "+period.getYears());
+		
+		System.out.println("-----------------------------------------------");
+		
+		LocalDate initialDate = LocalDate.now();
+		LocalDate finalDate = initialDate.plus(period.ofDays(5));
+		
+		int days = period.between(initialDate, finalDate).getDays();
+		
+		System.out.println(days+" days");
+		long between = ChronoUnit.DAYS.between(initialDate, finalDate);
+		System.out.println(between+" days");
+		
+		LocalDate bdy = LocalDate.of(2002,Month.JUNE, 14);
+		Period p = Period.between( bdy,initialDate);
+		long p1 = ChronoUnit.DAYS.between(bdy,initialDate);
+		
+		System.out.println("You are "+p+" years old");
+		System.out.println("You are "+p1+" years old");
+
+	}
+
+}

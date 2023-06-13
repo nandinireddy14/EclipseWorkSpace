@@ -1,0 +1,7 @@
+package cgg.functionalinterface;
+
+@FunctionalInterface
+public interface MyInterface {
+	void method1();
+	boolean equals();
+}

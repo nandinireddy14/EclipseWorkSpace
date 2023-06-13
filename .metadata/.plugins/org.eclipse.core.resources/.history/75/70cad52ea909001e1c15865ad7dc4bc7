@@ -1,0 +1,37 @@
+package cgg.functionalinterface;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+//		createThreadUsingAnonymousClass();
+		createThreadUsingLambda();
+	}
+
+	private static void createThreadUsingLambda() {
+		Runnable rt = ()->{
+			System.out.println("IAm Runnable");
+			
+			
+		};
+		Thread thread = new Thread(rt);
+		thread.start();
+		
+	}
+
+	private static void createThreadUsingAnonymousClass() {
+		//anonymous class
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Iam a Thread my task is executing..");
+				
+			}
+			
+		};
+		Thread thread = new Thread(r);
+		thread.start();
+	}
+
+}

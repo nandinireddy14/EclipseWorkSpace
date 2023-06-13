@@ -1,0 +1,16 @@
+package cgg.localtime;
+
+import java.time.LocalTime;
+
+public class LocalTimeDemo {
+
+	public static void main(String[] args) {
+		LocalTime tt= LocalTime.now();
+		System.out.println(tt);
+		
+		System.out.println(tt.minusHours(2));
+
+
+	}
+
+}

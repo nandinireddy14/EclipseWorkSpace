@@ -1,0 +1,10 @@
+package cgg.hibernate.firstlevelcache;
+
+public class FirstLevelCacheDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

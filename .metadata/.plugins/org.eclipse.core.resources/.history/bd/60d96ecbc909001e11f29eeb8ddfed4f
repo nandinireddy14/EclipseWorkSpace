@@ -1,0 +1,6 @@
+package cgg.lambdas;
+
+public interface MyInterface8 {
+	int safeDivide(int a,int b);
+
+}

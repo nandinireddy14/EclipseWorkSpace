@@ -1,0 +1,10 @@
+package cgg.periodduration;
+
+public class PeriodExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

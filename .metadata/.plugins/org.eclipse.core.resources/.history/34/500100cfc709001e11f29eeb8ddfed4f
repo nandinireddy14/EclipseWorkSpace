@@ -1,0 +1,5 @@
+package cgg.lambdas;
+
+public interface MyInterface6 {
+
+}

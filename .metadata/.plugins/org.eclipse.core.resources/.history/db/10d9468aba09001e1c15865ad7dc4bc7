@@ -1,0 +1,66 @@
+package cgg.lambdas;
+
+public class LambdaExample {
+
+	public static void main(String[] args) {
+		
+	lambdaWithZeroPara();
+	System.out.println("---------------------------------------------"
+			+ "");
+	anonymousClassZeroPara();
+	System.out.println("---------------------------------------------");
+	
+	lambdaWithOnePara();
+	System.out.println("---------------------------------------------");
+	
+	lambdaWithMultiplePara();
+	System.out.println("---------------------------------------------");
+	
+	lambdaWithBooleanReturnType();
+	}
+
+	private static void lambdaWithBooleanReturnType() {
+		MyInterface4 i4=(a1,a2)->a1>a2;
+		
+		boolean ans =i4.test(4, 2);
+		System.out.println(ans);
+	}
+
+	private static void lambdaWithMultiplePara() {
+		MyInterface3 i3=(name,age)->{System.out.println("name : "+name+" "
+				+ "&&  age : "+age);
+		
+		System.out.println("Heyyy..");};
+		
+		i3.method3("Nandu", 20);
+		
+	}
+
+	private static void lambdaWithOnePara() {
+		MyInterface2 i2 =name->System.out.println(name);
+		i2.method2("Nandu");
+	}
+
+	private static void anonymousClassZeroPara() {
+		MyInterface1 i1=new MyInterface1() {
+
+			@Override
+			public void method1() {
+				System.out.println("Anonymous Class..");
+				
+			}
+			
+		};
+		i1.method1();
+		
+	}
+
+	private static void lambdaWithZeroPara() {
+		//defining lambda or implementing interface
+		MyInterface1 i1=()->System.out.println("Lambda with zero paramteres.");
+
+		//calling lambda
+		i1.method1();
+	}
+
+}

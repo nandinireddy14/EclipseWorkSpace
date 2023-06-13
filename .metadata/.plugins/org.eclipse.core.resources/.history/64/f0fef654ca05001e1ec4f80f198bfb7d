@@ -1,0 +1,12 @@
+package cgg.hibernate.xmlmapping.empdept;
+
+public class Employee {
+
+	private int empId;
+	private String empName;
+	private Double empSal;
+	
+
+	
+	
+}

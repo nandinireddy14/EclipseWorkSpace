@@ -1,0 +1,6 @@
+package cgg.lambdas;
+
+@FunctionalInterface
+public interface Interface3 {
+void method3();
+}

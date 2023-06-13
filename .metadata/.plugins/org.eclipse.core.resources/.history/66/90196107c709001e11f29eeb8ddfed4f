@@ -1,0 +1,6 @@
+package cgg.lambdas;
+
+@FunctionalInterface
+public interface Interface5 {
+	int add(int a,int b);
+}
