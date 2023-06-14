@@ -1,0 +1,19 @@
+package cgg.methodreference;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class MethodReferenceExample {
+
+	public static void main(String[] args) {
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+//		Runnable r=()->System.out.println("My task is running");
+//		executorService.execute(r);
+
+	}
+	private static void myRun()
+	{
+		System.out.println("My task is running..");
+	}
+
+}

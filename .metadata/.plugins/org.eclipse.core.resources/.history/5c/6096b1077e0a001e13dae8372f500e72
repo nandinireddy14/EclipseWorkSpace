@@ -1,0 +1,10 @@
+package cgg.methodreference;
+
+public class MethodReferenceExample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
