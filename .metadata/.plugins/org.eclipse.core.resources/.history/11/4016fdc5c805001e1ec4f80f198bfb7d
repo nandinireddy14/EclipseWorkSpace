@@ -1,5 +1,0 @@
-package cgg.hibernate.xmlmapping.empdept;
-
-public class Department {
-
-}

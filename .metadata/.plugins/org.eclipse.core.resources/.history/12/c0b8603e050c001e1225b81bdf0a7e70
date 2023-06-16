@@ -1,0 +1,5 @@
+package cgg.lambdathisreference;
+
+public interface Operation {
+
+}

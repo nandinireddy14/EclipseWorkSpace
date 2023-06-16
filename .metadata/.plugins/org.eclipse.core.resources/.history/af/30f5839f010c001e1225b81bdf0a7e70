@@ -1,0 +1,5 @@
+package cgg.closure;
+
+public interface Operation {
+
+}

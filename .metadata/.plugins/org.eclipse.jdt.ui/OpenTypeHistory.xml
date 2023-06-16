@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1681104346444"/>
-    <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util(Collection.class[Collection" modifiers="1537" timestamp="1681104346444"/>
     <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1681104346444"/>
     <typeInfo handle="=HibernateWithoutMain/C:\/Users\/CGG\/Downloads\/hibernate-search-5.8.0.Final-dist\/hibernate-search-5.8.0.Final\/dist\/lib\/required\/javassist-3.20.0-GA.jar&lt;javassist.bytecode.analysis(Util.class[Util" modifiers="33" timestamp="1505310096000"/>
     <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1681104346444"/>
@@ -10,4 +9,7 @@
     <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util.function(Predicate.class[Predicate" modifiers="1537" timestamp="1681104346444"/>
     <typeInfo handle="=basicJavaPro/src&lt;multi{Communicate.java[Consumer" modifiers="0" timestamp="1684317240162"/>
     <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util.function(Consumer.class[Consumer" modifiers="1537" timestamp="1681104346444"/>
+    <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util.stream(Stream.class[Stream" modifiers="1537" timestamp="1681104346444"/>
+    <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util(Arrays.class[Arrays" modifiers="33" timestamp="1681104346444"/>
+    <typeInfo handle="=EmployeeInsuranceApp/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&lt;java.util(Collection.class[Collection" modifiers="1537" timestamp="1681104346444"/>
 </typeInfoHistroy>

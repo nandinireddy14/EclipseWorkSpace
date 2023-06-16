@@ -1,0 +1,13 @@
+package cgg.closure;
+
+public class ClosureExample {
+
+	public static void main(String[] args) {
+		int x=30;
+		int y=40;
+		
+		
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package cgg.lambdathisreference;
+
+public class ThisReferenceExample {
+public static void main(String[] args) {
+	int x=20;
+}
+}

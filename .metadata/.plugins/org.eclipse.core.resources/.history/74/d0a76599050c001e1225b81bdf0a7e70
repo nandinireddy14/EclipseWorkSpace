@@ -1,0 +1,13 @@
+package cgg.lambdathisreference;
+
+public class ThisReferenceExample {
+public static void main(String[] args) {
+	int x=20;
+	
+}
+private static void doOperate(int i,Operation o)
+{
+	o.operate(i);
+}
+
+}

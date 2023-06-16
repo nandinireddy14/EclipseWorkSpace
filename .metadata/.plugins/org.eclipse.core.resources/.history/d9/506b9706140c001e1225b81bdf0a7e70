@@ -1,0 +1,10 @@
+package cgg.streamapi;
+
+public class StreamCreationExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

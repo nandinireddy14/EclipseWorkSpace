@@ -1,0 +1,12 @@
+package cgg.streamapi;
+
+public class Student {
+
+	public static void main(String[] args) {
+		private String name;
+		private int age;
+		
+
+	}
+
+}
