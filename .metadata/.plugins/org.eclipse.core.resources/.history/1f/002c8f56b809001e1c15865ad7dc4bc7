@@ -1,7 +1,0 @@
-package cgg.lambdas;
-
-public interface MyInterface2 {
-
-	
-	void method2(String name);
-}

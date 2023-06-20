@@ -1,5 +1,0 @@
-package cgg.functionalinterface;
-
-public interface MyInterface3 extends MyInterface1 {
-
-}
