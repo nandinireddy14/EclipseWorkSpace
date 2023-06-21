@@ -3938,3 +3938,16 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2023-06-20 10:16:21,407 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-06-20 10:16:21,407 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CGG\eclipse-workspace\HibernateStudentManagement\src\test\resources
 2023-06-20 14:15:58,746 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-06-20 16:16:19,833 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-20 16:16:19,836 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CGG\eclipse-workspace\ChatGPT\src\main\resources
+2023-06-20 16:16:19,840 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-06-20 16:16:19,840 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\CGG\eclipse-workspace\ChatGPT\src\test\resources
+2023-06-20 16:27:25,194 [Worker-75: Fetching remote refs from ssh://nandinireddy14@github.com/nandinireddy14/EclipseWorkSpace.git] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-06-20 16:27:25,348 [Worker-75: Fetching remote refs from ssh://nandinireddy14@github.com/nandinireddy14/EclipseWorkSpace.git] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-06-20 16:27:31,012 [sshd-JGitSshClient[73642c4c]-nio2-thread-6] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[nandinireddy14@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-06-20 16:27:31,015 [sshd-JGitSshClient[73642c4c]-nio2-thread-6] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[nandinireddy14@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-06-20 16:29:55,248 [sshd-JGitSshClient[2b1f4c4c]-nio2-thread-6] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[nandinireddy14@github.com/20.207.73.82:22])[state=Opened] SshException: Server key did not validate
+2023-06-20 16:29:55,250 [sshd-JGitSshClient[2b1f4c4c]-nio2-thread-6] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[nandinireddy14@github.com/20.207.73.82:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2023-06-21 10:12:17,919 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-21 11:50:43,627 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-21 14:28:30,101 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
