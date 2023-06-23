@@ -15,6 +15,10 @@ public class Employee{
 	public int getAge() {
 		return age;
 	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", age=" + age + "]";

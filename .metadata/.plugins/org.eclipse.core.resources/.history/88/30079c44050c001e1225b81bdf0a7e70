@@ -1,8 +1,0 @@
-package cgg.lambdathisreference;
-
-public interface Operation {
-	@FunctionalInterface
-	public interface Operation {
-	void operate(int i);
-	}
-}
