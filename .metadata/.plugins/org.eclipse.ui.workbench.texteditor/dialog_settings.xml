@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Stream"/>
+		<item key="selection" value="1.5"/>
 		<list key="findhistory">
+			<item value="1.5"/>
 			<item value="stream"/>
 			<item value=""/>
 		</list>
