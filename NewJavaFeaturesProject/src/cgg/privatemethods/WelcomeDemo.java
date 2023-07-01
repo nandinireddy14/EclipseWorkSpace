@@ -6,7 +6,7 @@ public class WelcomeDemo implements Welcome {
 		WelcomeDemo demo = new WelcomeDemo();
 		demo.hi();
 		demo.greet();
-//		demo.test();
+		Welcome.test();
 	}
 
 //	private void test() {
