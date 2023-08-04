@@ -3,6 +3,11 @@
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 			<item value="C:\Users\CGG\eclipse-workspace"/>
+			<item value="C:\Users\CGG\Desktop\ecommerce\src\main\java\cgg\ecommerce\entities\Category.java"/>
+			<item value="C:\Users\CGG\eclipse-workspace\EcommerceProject\src\main\resources\hibernate.cfg.xml"/>
+			<item value="C:\Users\CGG\eclipse-workspace\StudentManagementApp"/>
+			<item value="C:\Users\CGG\eclipse-workspace\ServletDemoProject\src\main\webapp\first.jsp"/>
+			<item value="C:\Users\CGG\eclipse-workspace\DebugProj\src\cgg\debug\ExceptionalBreakpointDemo.java"/>
 			<item value="C:\Users\CGG\eclipse-workspace\JavaLabBook"/>
 			<item value="C:\Users\CGG\eclipse-workspace\JavaLabBook\src\Four\FourFour.java"/>
 		</list>
@@ -28,17 +33,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="cgg.chatgpt"/>
-			<item value="cgg.chatgpt.ChatGPT"/>
-			<item value="cgginterns.hibernate"/>
+			<item value="cgg.ecom"/>
 		</list>
 		<list key="groupId">
-			<item value="cgg.chatgpt"/>
-			<item value="cgginterns.hibernate"/>
+			<item value="cgg.ecom"/>
 		</list>
 		<list key="artifactId">
-			<item value="ChatGPT"/>
-			<item value="HibernateProj"/>
+			<item value="EcommerceProj"/>
+			<item value="EcomProj"/>
+			<item value="EcommerceProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -74,5 +77,18 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="cgg.ecom"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="EcommerceProject"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
 	</section>
 </section>

@@ -1,0 +1,8 @@
+2023-07-15 11:25:57 INFO  ExampleDemo2:12 - Info Level Message
+2023-07-15 11:25:57 WARN  ExampleDemo2:13 - Warn Message
+2023-07-15 11:25:57 ERROR ExampleDemo2:14 - Error Message
+2023-07-15 11:26:58 TRACE ExampleDemo2:10 - Trace Level Meassage
+2023-07-15 11:26:58 DEBUG ExampleDemo2:11 - Debug Level Message
+2023-07-15 11:26:58 INFO  ExampleDemo2:12 - Info Level Message
+2023-07-15 11:26:58 WARN  ExampleDemo2:13 - Warn Message
+2023-07-15 11:26:58 ERROR ExampleDemo2:14 - Error Message
