@@ -1,8 +1,20 @@
 package cgg.ecom.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Category {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name="category_id")
 private int categoryId;
+	@Column(name="category_name")
 private String categoryName;
+	@Column(name="category_desc")
 private String categoryDesc;
 public int getCategoryId() {
 	return categoryId;
@@ -22,9 +34,8 @@ public String getCategoryDesc() {
 public void setCategoryDesc(String categoryDesc) {
 	this.categoryDesc = categoryDesc;
 }
-public Category(int categoryId, String categoryName, String categoryDesc) {
+public Category( String categoryName, String categoryDesc) {
 	super();
-	this.categoryId = categoryId;
 	this.categoryName = categoryName;
 	this.categoryDesc = categoryDesc;
 }

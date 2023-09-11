@@ -1,6 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="components/common_css.jsp"%>
+<%@ page import="cgg.ecom.dao.CategoryDao" %>
+<%@ page import="cgg.ecom.entities.Category" %>
+<%@ page import="java.util.List" %>
+<%@page import="cgg.ecom.dao.UserDao"%>
+<%@page import="cgg.ecom.entities.Users"%>
+<%@page import="cgg.ecom.dao.ProductDao"%>
+<%@page import="cgg.ecom.entities.Product"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +21,7 @@
 	
 	<div class="bg-info h-100">
 	<%@include file="components/message.jsp"%>
-		<div class="container p-4">
+		<div class="container p-2">
 			<div class="row ">
 				<div class="col-md-4">
 					<div class="card my-3" style="width: 20rem;">
@@ -22,8 +30,15 @@
 								<img src="images/users.png" class="p-4 h-50 w-50" />
 							</div>
 							<a href="users.jsp" class="text-decoration-none"><h5
-									class="card-title ">Users</h5></a>
-							<p class="card-text">0</p>
+									class="card-title text-dark">Users</h5></a>
+							
+							<%
+							UserDao u = new UserDao();
+							List<Users> list = u.getAllUsers();
+							int length=list.size();
+							%>
+							<p class="card-text"><%=length %></p>
+							
 						</div>
 					</div>
 				</div>
@@ -33,9 +48,14 @@
 							<div class="text-center">
 								<img src="images/lists.png" class="p-4 h-50 w-50" />
 							</div>
-							<a href="users.jsp" class="text-decoration-none"><h5
-									class="card-title ">Categories</h5></a>
-							<p class="card-text">0</p>
+							<a href="categories.jsp" class="text-decoration-none"><h5
+									class="card-title text-dark">Categories</h5></a>
+								<%
+							CategoryDao u1 = new CategoryDao();
+							List<Category> list1 = u1.getAllCategory();
+							int length1=list1.size();
+							%>
+							<p class="card-text"><%=length1 %></p>
 						</div>
 					</div>
 				</div>
@@ -45,9 +65,14 @@
 							<div class="text-center">
 								<img src="images/products.png" class="p-4 h-50 w-50" />
 							</div>
-							<a href="users.jsp" class="text-decoration-none"><h5
-									class="card-title ">Products</h5></a>
-							<p class="card-text">0</p>
+							<a href="products.jsp" class="text-decoration-none"><h5
+									class="card-title text-dark">Products</h5></a>
+							<%
+							ProductDao u2 = new ProductDao();
+							List<Product> list2 = u2.getAllProducts();
+							int length2=list2.size();
+							%>
+							<p class="card-text"><%=length2 %></p>
 						</div>
 					</div>
 				</div>
@@ -171,7 +196,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form action="Adding" method="post">
 						<div class="form-group">
 							<label for="formGroupExampleInput5"><b>Category Name</b></label>
 							<input type="text" class="form-control"
@@ -188,7 +213,7 @@
 						</div>
 				
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-primary" name="adding" value="add_category">Submit</button>
 					<button type="button" class="btn btn-secondary"
 						data-dismiss="modal">Close</button>
 
@@ -212,7 +237,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form action="Adding" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="formGroupExampleInput7"><b>Product Name</b></label> <input
 								type="text" class="form-control" id="formGroupExampleInput7"
@@ -220,7 +245,7 @@
 						</div>
 						<div class="form-group">
 							<label for="formGroupExampleInput8"><b>Product
-									Descripiton</b></label> <input type="text" class="form-control"
+									Description</b></label> <input type="text" class="form-control"
 								id="formGroupExampleInput8"
 								placeholder="Enter Product Descripiton" name="pro_description">
 						</div>
@@ -246,7 +271,18 @@
 						<div class="form-group">
 							<label for="formGroupExampleInput12"><b>Choose
 									Category</b></label> <select id="formGroupExampleInput12" name="pro_category">
-								<option></option>
+									<%
+									CategoryDao c3=new CategoryDao();
+									List<Category> l3=c3.getAllCategory();
+									
+									for(Category s:l3)
+									{%>
+										<option value='<%=s.getCategoryName()%>'><%= s.getCategoryName() %></option>
+										<% 
+									}
+									%>
+								
+								
 							</select>
 						</div>
 						<div class="form-group">
@@ -257,7 +293,7 @@
 						</div>
 				
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-primary" name="adding" value="add_product">Submit</button>
 					<button type="button" class="btn btn-secondary"
 						data-dismiss="modal">Close</button>
 

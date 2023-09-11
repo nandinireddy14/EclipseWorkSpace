@@ -2,7 +2,13 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\CGG\eclipse-workspace\KeepNotes\pom.xml"/>
 			<item value="C:\Users\CGG\eclipse-workspace"/>
+			<item value="C:\Users\CGG\Downloads\productcrudapp"/>
+			<item value="C:\Users\CGG\git\KeepNote"/>
+			<item value="C:\Users\CGG\eclipse-workspace\SpringMVC\src\main\java\cgg\spring\mvc\controllers\ReController.java"/>
+			<item value="C:\Users\CGG\eclipse-workspace\SpringJDBC\src\main\java\cgg\spring\jdbc\App.java"/>
+			<item value="C:\Users\CGG\eclipse-workspace\SpringCore\src\cgg\springcore\javaconfig\StudentDemo.java"/>
 			<item value="C:\Users\CGG\Desktop\ecommerce\src\main\java\cgg\ecommerce\entities\Category.java"/>
 			<item value="C:\Users\CGG\eclipse-workspace\EcommerceProject\src\main\resources\hibernate.cfg.xml"/>
 			<item value="C:\Users\CGG\eclipse-workspace\StudentManagementApp"/>
@@ -33,15 +39,26 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="cgg.ecom"/>
+			<item value="cgg.product.crud"/>
+			<item value="cgg.product.crud.MyProApp"/>
+			<item value="cgg.keep.notes"/>
+			<item value="cgg.springmvc"/>
+			<item value="SpringMvc"/>
 		</list>
 		<list key="groupId">
-			<item value="cgg.ecom"/>
+			<item value="cgg.product.crud"/>
+			<item value="cgg.keep.notes"/>
+			<item value="cgg.springmvc"/>
 		</list>
 		<list key="artifactId">
-			<item value="EcommerceProj"/>
-			<item value="EcomProj"/>
-			<item value="EcommerceProject"/>
+			<item value="HelloProduct"/>
+			<item value="MyProApp"/>
+			<item value="MyProductApp"/>
+			<item value="ProductCrudApp"/>
+			<item value="MyProductCrudApp"/>
+			<item value="KeepNotes"/>
+			<item value="SpringMVCProject"/>
+			<item value="SpringMvc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -89,6 +106,32 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\CGG\eclipse-workspace\MyProApp"/>
+			<item value="C:\Users\CGG\Desktop\SpringbootProj"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 </section>

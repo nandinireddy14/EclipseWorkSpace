@@ -59,7 +59,7 @@ public class Login extends HttpServlet {
 			session.setAttribute("current_user", "normal");
 			session.setAttribute("username", user.getUserName());
 			session.setAttribute("message", "Dear"+user.getUserName()+" you have successfully logged in");
-			response.sendRedirect("normal.jsp");
+			response.sendRedirect("index.jsp");
 		}
 		}
 		

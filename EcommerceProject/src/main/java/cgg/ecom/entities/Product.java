@@ -1,31 +1,33 @@
 package cgg.ecom.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
+	@Column(name="product_id")
 	private int productId;
+	@Column(name="product_name")
 	private String productName;
+	@Column(name="product_desc")
 	private String productDesc;
+	@Column(name="product_price")
 	private int productPrice;
+	@Column(name="product_discount")
 	private int productDiscount;
+	@Column(name="product_quantity")
 	private int productQuantity;
+	@Column(name="product_pic")
 	private String productPic;
+	@Column(name="product_category")
 	private String productCategory;
-	public Product(int productId, String productName, String productDesc, int productPrice, int productDiscount,
-			int productQuantity, String productPic, String productCategory) {
-		super();
-		this.productId = productId;
-		this.productName = productName;
-		this.productDesc = productDesc;
-		this.productPrice = productPrice;
-		this.productDiscount = productDiscount;
-		this.productQuantity = productQuantity;
-		this.productPic = productPic;
-		this.productCategory = productCategory;
-	}
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+
+
 	public int getProductId() {
 		return productId;
 	}

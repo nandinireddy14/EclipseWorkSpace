@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
-    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
-<beans>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    ">
+ 
 	<!-- <bean id="triangle" class="cgg.springcore.Triangle"> <property name="type" 
 		value="equilateral"/> for setter <constructor-arg value="equilateral"/> <constructor-arg 
 		type="int" value="20"/> <constructor-arg type="java.lang.String" value="20"/> 
@@ -13,10 +22,12 @@
 	<!-- <bean id="triangle" class="cgg.springcore.Triangle"> -->
 	<!-- <bean id="triangle" class="cgg.springcore.Triangle"
 		autowire="byName"> -->
-		 <bean id="triangle" class="cgg.springcore.Triangle"
-		autowire="byType">
+		
+	
+		<!--  <bean id="triangle" class="cgg.springcore.Triangle"
+		 autowire="byType">
 
-		<!-- <property name="points"> <list> <ref bean="zeroPoint"/> <ref bean="point2"/> 
+		 <property name="points"> <list> <ref bean="zeroPoint"/> <ref bean="point2"/> 
 			<ref bean="point3"/> </list> </property> -->
 
 
@@ -31,8 +42,8 @@
 		<!-- <property name="pointC" ref="point3" /> -->
 
 		<!-- <property name="pointC"> <bean class="cgg.springcore.Point"> <property 
-			name="x" value="20" /> <property name="y" value="0" /> </bean> </property> -->
-	</bean>
+			name="x" value="20" /> <property name="y" value="0" /> </bean> </property> 
+	</bean>-->
 
 	<!-- <bean id="zeroPoint" class="cgg.springcore.Point"> <property name="x" 
 		value="0" /> <property name="y" value="0" /> </bean> -->
@@ -43,17 +54,30 @@
 		value="-20" /> <property name="y" value="0" /> </bean> <bean id="point3" 
 		class="cgg.springcore.Point"> <property name="x" value="20" /> <property 
 		name="y" value="0" /> </bean> -->
-		
-	<bean id="pointA" class="cgg.springcore.Point">
+ 		
+<!-- 	<bean id="center" class="cgg.springcore.Point"> -->
+<!-- 	<bean id="pointA" class="cgg.springcore.Point">
+	<qualifier value="circleRelated"/>
 		<property name="x" value="0" />
 		<property name="y" value="0" />
 	</bean>
-<!-- 	<bean id="pointB" class="cgg.springcore.Point">
+ 	<bean id="pointB" class="cgg.springcore.Point">
 		<property name="x" value="-20" />
 		<property name="y" value="0" />
 	</bean>
 	<bean id="pointC" class="cgg.springcore.Point">
 		<property name="x" value="20" />
 		<property name="y" value="0" />
+	</bean>  -->
+<!-- 	
+	<bean id="circle" class="cgg.springcore.Circle">
+	
 	</bean> -->
-</beans>
+	
+<!-- 	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+
+ 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+  -->
+  <context:annotation-config/>
+  <context:component-scan base-package="cgg.springcore.javaconfig"/>
+ </beans>

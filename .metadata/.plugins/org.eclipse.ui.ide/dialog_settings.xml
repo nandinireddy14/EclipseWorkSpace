@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
 		</list>
 	</section>
 	<section name="SmartImportWizard">
@@ -11,6 +12,14 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\CGG\eclipse-workspace\MyProApp"/>
+			<item value="C:\Users\CGG\Downloads\KeepNote-Step3-Boilerplate\KeepNote-Step3-Boilerplate"/>
+			<item value="C:\Users\CGG\Desktop\KeepNote-Step2-Boilerplate"/>
+			<item value="C:\Users\CGG\Downloads\KeepNote-Step2-Boilerplate\KeepNote-Step2-Boilerplate"/>
+			<item value="C:\Users\CGG\Downloads\productcrudapp"/>
+			<item value="C:\Users\CGG\git\KeepNotes"/>
+			<item value="C:\Users\CGG\git\KeepNote-Step1-Boilerplate\src"/>
+			<item value="C:\Users\CGG\Downloads\KeepNote-Step1-Boilerplate"/>
 			<item value="C:\Users\CGG\Desktop\ecommerce"/>
 		</list>
 	</section>

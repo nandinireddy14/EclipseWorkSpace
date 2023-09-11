@@ -28,8 +28,8 @@
 		<property name="format_sql">
 			true
 		</property>
-<!-- 		<mapping class="cgg.ecom.entities.Category"></mapping>
-		<mapping class="cgg.ecom.entities.Product"></mapping> -->
+ 		<mapping class="cgg.ecom.entities.Category"></mapping>
+		<mapping class="cgg.ecom.entities.Product"></mapping>
 		<mapping class="cgg.ecom.entities.Users"></mapping>
 
 	</session-factory>

@@ -10,7 +10,7 @@
 <body>
 <%@include file="components/navbar.jsp" %>
 	<div class="d-flex justify-content-center my-5">
-		<div class="card w-25">
+		<div class="card" style="width:450px;box-shadow:0px 4px 0px 0px #17a2b8">
 			<div class="card-body">
 			<%@ include file="components/message.jsp" %>
 			<%@ include file="components/validmsg.jsp" %>

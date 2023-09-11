@@ -72,7 +72,7 @@ public class Register extends HttpServlet {
 				InputStream is = part.getInputStream();
 				byte[] data=new byte[is.available()];
 				is.read(data);
-			    String path=getServletContext().getRealPath("images")+File.separator+"images"+File.separator+filename;
+			    String path=getServletContext().getRealPath("images")+File.separator+"images"+filename;
 //				out.println(path);
 				FileOutputStream fos = new FileOutputStream(path);
 				fos.write(data);

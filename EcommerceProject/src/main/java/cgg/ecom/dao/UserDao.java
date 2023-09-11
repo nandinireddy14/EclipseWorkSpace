@@ -1,5 +1,7 @@
 package cgg.ecom.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -23,6 +25,14 @@ public class UserDao {
 		Users u1 = (Users) q.uniqueResult();
 		
 		return u1;
+	}
+	
+	public List<Users> getAllUsers() {
+		Query q = session.createQuery("from Users");
+		List resultList = q.getResultList();
+		
+		
+		return resultList;
 	}
 
 }

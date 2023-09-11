@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="cgg.ecom.dao.CategoryDao" %>
+<%@ page import="cgg.ecom.entities.Category" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +30,20 @@ String username=(String) session.getAttribute("username");
          Categories
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
+									<%
+									CategoryDao c=new CategoryDao();
+									List<Category> l=c.getAllCategory();
+									
+									for(Category s:l)
+									{%>
+										          <a class="dropdown-item" href="index.jsp?category=<%= s.getCategoryName()%>"><%= s.getCategoryName() %></a>
+										
+										<% 
+									}
+									%>
+        
+        
+        
         </div>
       </li>
     </ul>
@@ -36,14 +52,15 @@ String username=(String) session.getAttribute("username");
     <%
     if(current_user==null)
     { %>
-      <a href="login.jsp"><button class="btn btn-outline-info my-2 my-sm-0 m-2">Login</button></a>
-      <a href="register.jsp"><button class="btn btn-outline-info my-2 my-sm-0">Register</button></a>
+      <a href="login.jsp" class="btn btn-outline-info my-2 my-sm-0 m-2">Login</a>
+      <a href="register.jsp" class="btn btn-outline-info my-2 my-sm-0">Register</a>
       <%}
     else{
     	%>
     	
-    	<a href="#"><button class="btn btn-outline-info my-2 my-sm-0 m-2"><%= username %></button></a>
-      <a href="login.jsp"><button class="btn btn-outline-info my-2 my-sm-0">Logout</button></a>
+    	<a href="#" class="btn btn-outline-info my-2 my-sm-0"><%= username %></a>
+      <a href="Logout" class="btn btn-outline-info my-2 my-sm-0">Logout</a>
+      
     <% 	
     }
     %>

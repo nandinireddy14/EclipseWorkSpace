@@ -140,13 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ServletDemoProject" path="/ServletDemoProject" reloadable="true" source="org.eclipse.jst.jee.server:ServletDemoProject"/>
-      <Context docBase="ServletConfigDemo1" path="/ServletConfigDemo1" reloadable="true" source="org.eclipse.jst.jee.server:ServletConfigDemo1"/>
-      <Context docBase="SessionTrackingProject" path="/SessionTrackingProject" reloadable="true" source="org.eclipse.jst.jee.server:SessionTrackingProject"/>
-      <Context docBase="URLRewritingProj" path="/URLRewritingProj" reloadable="true" source="org.eclipse.jst.jee.server:URLRewritingProj"/>
-
-      <Context docBase="ecommerce" path="/ecommerce" reloadable="true" source="org.eclipse.jst.jee.server:ecommerce"/>
-      <Context docBase="HttpSession" path="/HttpSession" reloadable="true" source="org.eclipse.jst.jee.server:HttpSession"/><Context docBase="FilterExample" path="/FilterExample" reloadable="true" source="org.eclipse.jst.jee.server:FilterExample"/><Context docBase="JSTLExample" path="/JSTLExample" reloadable="true" source="org.eclipse.jst.jee.server:JSTLExample"/><Context docBase="EcommerceProject" path="/EcommerceProject" reloadable="true" source="org.eclipse.jst.jee.server:EcommerceProject"/><Context docBase="Register" path="/Register" reloadable="true" source="org.eclipse.jst.jee.server:Register"/><Context docBase="JSPActionTags" path="/JSPActionTags" reloadable="true" source="org.eclipse.jst.jee.server:JSPActionTags"/></Host>
+      <Context docBase="HelloProduct" path="/HelloProduct" reloadable="true" source="org.eclipse.jst.jee.server:HelloProduct"/><Context docBase="productcrudapp" path="/productcrudapp" reloadable="true" source="org.eclipse.jst.jee.server:productcrudapp"/></Host>
     </Engine>
   </Service>
 </Server>
